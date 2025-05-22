@@ -1,0 +1,11 @@
+    {
+        "C_Cpp.intelliSenseEngine": "default",
+        "C_Cpp.default.compilerPath": "C:\msys64\mingw64\bin\gcc.exe", // Укажите путь к вашему gcc.exe
+        "C_Cpp.default.cStandard": "c11",
+        "C_Cpp.default.cppStandard": "c++11",
+        "C_Cpp.default.includePath": [
+            "${workspaceFolder}/Ⓑ",
+            "C:\msys64\mingw64\include" // Добавьте путь к заголовочным файлам MinGW
+        ]
+    }
+    

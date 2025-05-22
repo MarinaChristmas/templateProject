@@ -1,0 +1,14 @@
+cmake_minimum_required(VERSION 3.10)
+
+# Укажите путь к vcpkg, если он не установлен глобально
+set(CMAKE_TOOLCHAIN_FILE "C:/vcpkg/scripts/buildsystems/vcpkg.cmake" CACHE STRING "Vcpkg toolchain file")
+
+project(MyProject)
+
+find_package(json-c CONFIG REQUIRED)
+
+add_executable(client client.c)
+target_link_libraries(client PRIVATE json-c)
+
+add_executable(server server.c)
+target_link_libraries(server PRIVATE json-c)
